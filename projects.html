@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JeffryHawchab </title>
+  <link rel="icon" type="image/x-icon" href="img/galaxy.png">
+  <script src="https://kit.fontawesome.com/00c362caf9.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Projects</title>
+</head>
+
+<body>
+  <video autoplay muted loop id="myVideo">
+    <source src="img/jelly.mp4" type="video/mp4">
+  </video>
+  <nav class="navbar">
+    <div class="logo">JEFF</div>
+    <ul class="nav-links">
+      <div class="menu">
+        <li><i class="fa-solid fa-house-user"></i> <a href="index.html">HOME</a></li>
+        <li><i class="fa-solid fa-user"></i> <a href="about.html">ABOUT</a></li>
+        <li> <i class="fa-solid fa-suitcase"></i> <a href="projects.html">PROJECTS</a></li>
+        <li> <i class="fa-solid fa-certificate"></i> <a href="cert.html">Certifications</a>
+        </li>
+      </div>
+    </ul>
+  </nav>
+  <section id="project">
+    <!--heading--------------->
+    <div class="project-heading">
+      <h4>MY <span>PROJECTS</span></h4>
+    </div>
+    <div class="portfolio-container">
+      <!--1------------>
+      <a href="https://github.com/jeffryhawchab/calculator " class="portfolio-box app" data-lightbox="work">
+        <img alt="" src="img/calculator.png">
+      </a>
+      <!--2------------>
+      <a href="https://github.com/jeffryhawchab/reels" class="portfolio-box app" data-lightbox="work">
+        <img alt="" src="img/instagram.png">
+      </a>
+      <!--3------------>
+      <a href="https://github.com/jeffryhawchab/parking" class="portfolio-box appdesign" data-lightbox="work">
+        <img alt="" src="img/parking.png">
+      </a>
+      <!--4------------>
+      <a href="https://github.com/jeffryhawchab/hotel-management" class="portfolio-box web" data-lightbox="work">
+        <img alt="" src="img/hotel.svg">
+      </a>
+      <!--5------------>
+      <a href="https://github.com/XpertBotTeam/hospital-system-mangment" class="portfolio-box web" data-lightbox="work">
+        <img alt="" src="img/hms.png">
+      </a>
+      <!--6------------>
+      <a href="https://github.com/jeffryhawchab/Rportfolio " class="portfolio-box ai" data-lightbox="work">
+        <img alt="" src="img/Frame 1.png">
+      </a>
+    </div>
+  </section>
+  <!--js---------------------------------->
+  <script src="js/JQuery.js"></script>
+  <script src="js/lightbox.min.js"></script>
+  <script>
+    /*blog-filter-menu----------------------------*/
+    $(document).on('click', '.portfolio-filter li', function () {
+      $(this).addClass('portfolio-filter-active').siblings().removeClass('portfolio-filter-active')
+    });
+
+    /*portfolio-filter---------------------------------*/
+    $(document).ready(function () {
+      $('.list').click(function () {
+        const value = $(this).attr('data-filter');
+        if (value == 'all') {
+          $('.portfolio-box').show('1000');
+        } else {
+          $('.portfolio-box').not('.' + value).hide('1000');
+          $('.portfolio-box').filter('.' + value).show('1000');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

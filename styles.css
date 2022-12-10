@@ -1,0 +1,532 @@
+body {
+    overflow-x: hidden;
+
+}
+
+
+#myVideo {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.lds-hourglass {
+    display: inline-block;
+    position: relative;
+    animation: backInLeft;
+    animation-duration: 2s;
+    left: 700px;
+    top: 100px;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-hourglass:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid rgb(149, 72, 221);
+    border-color: rgb(160, 36, 108) transparent rgb(83, 211, 141) transparent;
+    animation: lds-hourglass 1.2s infinite;
+}
+
+@keyframes lds-hourglass {
+    0% {
+        transform: rotate(0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    50% {
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    100% {
+        transform: rotate(1800deg);
+    }
+}
+
+.lds-spinner {
+    color: official;
+    display: inline-block;
+    position: relative;
+    animation: backInLeft;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    top: 230px;
+    left: 780px;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-spinner div {
+    transform-origin: 40px 40px;
+    animation: lds-spinner 1.2s linear infinite;
+}
+
+.lds-spinner div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 37px;
+    width: 6px;
+    height: 18px;
+    border-radius: 20%;
+    background: rgb(233, 31, 223);
+}
+
+.lds-spinner div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -1.1s;
+}
+
+.lds-spinner div:nth-child(2) {
+    transform: rotate(30deg);
+    animation-delay: -1s;
+}
+
+.lds-spinner div:nth-child(3) {
+    transform: rotate(60deg);
+    animation-delay: -0.9s;
+}
+
+.lds-spinner div:nth-child(4) {
+    transform: rotate(90deg);
+    animation-delay: -0.8s;
+}
+
+.lds-spinner div:nth-child(5) {
+    transform: rotate(120deg);
+    animation-delay: -0.7s;
+}
+
+.lds-spinner div:nth-child(6) {
+    transform: rotate(150deg);
+    animation-delay: -0.6s;
+}
+
+.lds-spinner div:nth-child(7) {
+    transform: rotate(180deg);
+    animation-delay: -0.5s;
+}
+
+.lds-spinner div:nth-child(8) {
+    transform: rotate(210deg);
+    animation-delay: -0.4s;
+}
+
+.lds-spinner div:nth-child(9) {
+    transform: rotate(240deg);
+    animation-delay: -0.3s;
+}
+
+.lds-spinner div:nth-child(10) {
+    transform: rotate(270deg);
+    animation-delay: -0.2s;
+}
+
+.lds-spinner div:nth-child(11) {
+    transform: rotate(300deg);
+    animation-delay: -0.1s;
+}
+
+.lds-spinner div:nth-child(12) {
+    transform: rotate(330deg);
+    animation-delay: 0s;
+}
+
+@keyframes lds-spinner {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    opacity: 1;
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: #fff;
+}
+
+.nav-links a {
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+}
+
+
+/* LOGO */
+.logo {
+    font-family: 'Dancing Script', cursive;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    font-size: 32px;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 30px #4500e6, 0 0 40px #e04593, 0 0 50px #5557af, 0 0 60px #e60073, 0 0 70px #5248ad;
+    }
+
+    to {
+        text-shadow: 0 0 30px #4dffd8, 0 0 40px #4dafff, 0 0 50px #4dffd8, 0 0 60px #4dffca, 0 0 70px #4d6eff, 0 0 80px #4dffe1;
+    }
+}
+
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    background-color: rgb(139, 91, 202);
+    scale: 1.2;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+.write span {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 50px;
+    color: rgb(44, 180, 112);
+    position: relative;
+    top: 100px;
+    left: 150px;
+}
+
+.about h2 {
+    font-family: 'Noto Naskh Arabic', serif;
+    position: relative;
+    top: 179px;
+    left: 150px;
+    color: azure;
+    font-size: 50px;
+}
+
+.about h3 {
+    animation: backInLeft;
+    animation-duration: 2s;
+    font-family: 'Noto Sans', sans-serif;
+    position: relative;
+    top: 179px;
+    left: 150px;
+    color: azure;
+    font-size: 50px;
+}
+
+.about span {
+    color: rgb(160, 19, 66);
+}
+
+.intro h1 {
+    animation: backInLeft;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    top: 299px;
+    left: 300px;
+    font-size: 50px;
+    color: rgb(25, 74, 235);
+
+}
+
+.intro span {
+    color: rgb(255, 255, 255);
+}
+
+.intro h3 {
+    animation: backInLeft;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    font-family: 'Noto Sans', sans-serif;
+    position: relative;
+    top: 300px;
+    left: 200px;
+    width: 60%;
+    font-size: 30px;
+    color: rgb(206, 166, 166);
+}
+
+.findme h1 {
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    font-size: 50px;
+    color: rgb(206, 12, 180);
+    top: 400px;
+    left: 600px;
+}
+
+.findme h2 {
+    font-family: 'Noto Sans', sans-serif;
+    position: relative;
+    font-size: 30px;
+    color: rgb(189, 88, 88);
+    top: 400px;
+    left: 500px;
+}
+
+.findme span {
+    color: rgb(253, 255, 241);
+
+}
+
+.icons {
+    position: relative;
+    font-size: 50px;
+    top: 400px;
+    left: 600px;
+    bottom: 200px;
+}
+
+.icons i:hover {
+    scale: 1.2;
+}
+
+.icons i {
+    padding: 10px;
+    color: rgb(188, 182, 201);
+}
+
+
+
+.about1 h1 {
+    animation: bounceInDown;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    /* don't forget to set a duration! */
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    top: 200px;
+    left: 400px;
+    font-size: 50px;
+    color: azure;
+}
+
+.about1 span {
+    font-family: 'Dancing Script', cursive;
+    padding: 10px;
+    color: rgb(22, 180, 83);
+}
+
+.about1 h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    width: 50%;
+    position: relative;
+    left: 200px;
+    top: 200px;
+    font-size: 30px;
+    color: azure;
+}
+
+.about1 h3 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    width: 70%;
+    position: relative;
+    left: 200px;
+    top: 200px;
+    font-size: 30px;
+    color: azure;
+}
+
+.about1 span {
+    color: rgb(235, 21, 199);
+
+}
+
+.about1 p {
+    font-family: 'Noto Sans', sans-serif;
+    color: azure;
+    position: relative;
+    top: 200px;
+    left: 190px;
+    font-size: 40px;
+}
+
+
+
+#project {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0px;
+}
+
+.project-heading h2 {
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    color: azure;
+    font-size: 50px;
+}
+
+.project-heading h1 {
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    left: 600px;
+    bottom: 40px;
+    font-size: 50px;
+    color: white;
+}
+
+.project-heading span {
+    font-family: 'Dancing Script', cursive;
+    padding: 10px;
+    color: rgb(226, 23, 165);
+}
+
+
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.portfolio-box {
+    opacity: 1;
+    width: 330px;
+    padding: 15px;
+    border: 5px solid #5a00eb;
+    margin: 20px;
+}
+
+.portfolio-box:hover {
+    scale: 1.2;
+}
+
+
+.portfolio-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.project-heading h3 {
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    color: white;
+    font-size: 2.7em;
+    font-weight: 500;
+}
+
+.project-heading h4 {
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 2.7em;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 900px) {
+    .navbar {
+        font-size: x-large;
+        width: 1180px;
+    }
+
+    .about h3 {
+        font-size: 1.8em;
+    }
+
+    .write span {
+        font-size: 40px;
+    }
+
+    .lds-hourglass {
+        position: relative;
+        right: 170px;
+    }
+
+    .intro h1 {
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .lds-spinner {
+        position: relative;
+        right: 80px;
+    }
+
+    .intro h3 {
+        width: 200%;
+        font-size: 30px;
+    }
+
+    .findme h2 {
+        font-size: 20px;
+    }
+
+    .about1 h2 {
+        width: 180%;
+    }
+
+    .about1 h3 {
+        width: 200%;
+    }
+
+    .project-heading h2 {
+        position: relative;
+        left: 400px;
+    }
+
+    .portfolio-container {
+        align-content: space-around;
+        position: relative;
+        right: 50px;
+        display: grid;
+        grid-template-columns: 400px auto 200px;
+        padding: 70px;
+    }
+    .project-heading h4 {
+        position: relative;
+        left: 400px;
+    }
+}
