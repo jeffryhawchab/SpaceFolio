@@ -1,7 +1,7 @@
 
 <h2 align="center">
   Portfolio Website <br/>
-  <a href="https:"https://jeffhawchab.netlify.app/" target="_blank">https://jeffhawchab.netlify.app</a>
+  <a href="https:"https://jeffhawchab.netlify.app/" target="_blank">jeffryhawchab</a>
 </h2>
 <div align="center">
   <img alt="Demo" src="img/screen.png" />
