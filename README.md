@@ -51,8 +51,4 @@ Open the project navigate to index.html and open it with live server extension <
 Give a ⭐ if you like this website!
 
                                             
-<h1> Her's a video explaining </h1> <br>
-
-https://user-images.githubusercontent.com/93784338/206900597-823b6f06-f4b4-4adc-9a18-3021b01073f3.mp4
-
 
