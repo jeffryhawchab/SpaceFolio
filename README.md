@@ -18,7 +18,6 @@
 </center>
 
 
-## TL;DR
 
 You can fork this repo to modify and make changes of your own. Please give me proper credit  Thanks!
 
