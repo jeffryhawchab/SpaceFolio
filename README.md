@@ -23,7 +23,7 @@ You can fork this repo to modify and make changes of your own. Please give me pr
 
 ## Built With
 
-My personal portfolio <a href="https://jeffhawchab.netlify.app" target="_blank">https://jeffhawchab.netlify.app</a> which features some of my github projects as well  my  and technical skills.<br/>
+My personal portfolio <a href="https://jeffhawchab.netlify.app" target="_blank">https://jeffhawchab.netlify.app</a> which features some of my github projects as well  my  technical skills.<br/>
 
 This project was built using these technologies.
 
